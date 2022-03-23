@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="icon" type="image/x-icon" href="img/icono.ico" />
+	<link rel="icon" type="image/x-icon" href="images/iconoarbell.ico" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" >
 	<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 	<title>Ingreso</title>
 </head>
@@ -30,14 +30,27 @@
 	.tam{
 		font-size: 1.3em !important;
 	}
+
+	@media (max-width: 600px) {
+	  .img_querie {
+	  	margin-top: 30%;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	    width: 70%;
+	  }
+	  .img_querie img{
+	  	width: 100%;
+	  }
+	}
+
 </style>
 
 <body id="cuerpo">
 	<div id="section_1">
 		<div class="container" style="margin-top: 10%;">
 			<div class="row">
-				<div class="center">
-					<img src="images/arbell_logo.png" alt="">
+				<div class="center img_querie" >
+					<img width="" src="images/arbell_logo.png" alt="">
 				</div>
 			</div>
 		</div>
