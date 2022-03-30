@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+	body{
+		background-color: #dfe4ea;
+	}
+	.fuente{
+		/*font-family: 'Segoe UI Light'*/
+		font-family: 'Roboto', sans-serif;
+	}
+	.centrar{
+		display: flex;
+		justify-content: center;
+	}
+	.tam{
+		font-size: 1.3em !important;
+	}
+
+	@media (max-width: 600px) {
+	  .img_querie {
+	  	/*margin-top: 30%;*/
+	  	/*margin-left: auto;*/
+	  	/*margin-right: auto;*/
+	    /*width: 70%;*/
+	  }
+	  .img_querie img{
+	  	width: 100%;
+	  }
+	}
+
+	@media (min-width: 1350px) {
+	  .img_querie {
+	  	/*margin-top: 50%;*/
+	  	/*margin-left: auto;*/
+	  	/*margin-right: auto;*/
+	    width: 20% !important;
+	  }
+	  .img_querie img{
+	  	/*width: 100%;*/
+	  }
+	}
+
+	.img_querie{
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.img_querie img{
+		width: 100%;
+	}
