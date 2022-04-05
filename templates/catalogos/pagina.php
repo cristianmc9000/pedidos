@@ -61,33 +61,45 @@
 </style>
 
 <body>
-
+<div class="nav_container">
 	<nav>
 		<div class="nav-wrapper">
 			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			<a href="#" class="brand-logo center fuente">D. Carmina</a>
+			<a href="#" class="brand-logo center fuente">Dist. Carmina</a>
 			<ul class="right">
 				<li><a href="#"><i class="grande material-icons">shopping_cart</i></a></li>
 			</ul>
-    	</div>
+		</div>
 	</nav>
 
-  <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="images/sort_desc.png" height="100%" width="100%">
-      </div>
-      <a href="#user"><img class="circle" src="images/logo_sin_fondo.png"></a>
-      <a href="#name"><span class="white-text name">Carmen</span></a>
-      <a href="#email"><span class="white-text email">carmen@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>
+	<ul id="slide-out" class="sidenav">
+	    <li><div class="user-view">
+	      <div class="background">
+	        <img src="images/sort_desc.png" height="100%" width="100%">
+	      </div>
+	      <a href="#user"><img class="circle" src="images/logo_sin_fondo.png"></a>
+	      <a href="#name"><span class="white-text name">Carmen</span></a>
+	      <a href="#email"><span class="white-text email">carmen@gmail.com</span></a>
+	    </div></li>
+	    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+	    <li><a href="#!">Second Link</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="subheader">Subheader</a></li>
+	    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+	</ul>
+</div>
 
+<div class="row" style="margin-top: 5%">
+	<div class="input-field col s10 offset-s1">
+	    <select>
+	      <option value="" disabled selected>Selecciona el catálogo</option>
+	      <option value="1">Catálogo 55</option>
+	      <option value="2">Catálogo 58</option>
+	      <option value="3">Catálogo 60</option>
+	    </select>
+	    <label>Selecciona el catálogo</label>
+	</div>
+</div>
 
 <div class="contenedor">
 	<div class="left_arrow"><a href="#"><i class="large material-icons">chevron_left</i></a></div>
@@ -95,6 +107,25 @@
 	<div class="right_arrow"><a href="#"><i class="large material-icons">chevron_right</i></a></div>
 </div>
 
+<div class="container">
+	<div class="row">	
+		<div class="input-field col s7">
+	        <input id="codpro" type="text" class="validate">
+	        <label for="codpro">Código producto</label>
+	    </div>
+		<div class="input-field col s4 offset-s1">
+			<div class="number-container">
+				<!-- <label for="">Cantidad</label> -->
+				<input class="browser-default" type="number" name="" id="__cantidad" min="1" max="15" disabled>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container center">
+	<a class="waves-effect waves-light btn-large shop red lighten-1" ><i class="material-icons right">shopping_cart</i>Agregar al carrito</a>
+</div>
 
 </body>
 </html>
@@ -102,6 +133,14 @@
 <script>
 	$(document).ready(function(){
     	$('.sidenav').sidenav();
+    	$('select').formSelect();
+    	$('input[type="number"]').niceNumber({
+			autoSize: true,
+			autoSizeBuffer: 1,
+			buttonDecrement: "-",
+			buttonIncrement: "+",
+			buttonPosition: 'around'
+		});
   	});
 
 </script>
