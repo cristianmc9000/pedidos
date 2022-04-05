@@ -103,3 +103,6 @@
 .shop{
 	/*border-radius: 10% !important;*/
 }
+body{
+	overflow-x: hidden;
+}
